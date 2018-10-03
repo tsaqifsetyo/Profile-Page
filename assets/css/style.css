@@ -1,0 +1,306 @@
+*, body{
+	 padding: 0;
+	 margin: 0;
+}
+
+body{
+	background-color: #f7f9fc;
+}
+
+/* color */
+.bg-green{
+	background-color: #52dc90;
+	color: #fff;
+	box-shadow: 0 0 7px 0px #52dc90;
+	border: 1px solid #52dc90;
+}
+.bg-blue{
+	background-color: #52dc90;
+	color: #fff;
+	box-shadow: 0 0 7px 0px #55a8fd;
+	border: 1px solid #55a8fd;
+}
+.border-blue{
+	color: #55a8fd;
+	border: 1px solid #55a8fd;	
+}
+
+/* Component gan */
+.text-black{
+	color: #333;
+}
+.text-gray{
+	color: #888;
+}
+.button{
+	position: relative;
+	padding: 15px 30px 15px 30px;
+	text-decoration: none;
+	display: inline-block;
+	margin-right: 15px;
+	border-radius: 3px;
+}
+
+/* Navbarnya gan */
+nav{
+	position: relative;
+	width: 100%;
+	height: 60px;
+	background-color: #fff;
+	box-shadow: -1px -7px 20px 0px #888;
+}
+nav ul{
+	position: relative;
+	top: 20px;
+	margin: 0;
+	float: right;
+	right: 10%;
+}
+nav ul li{
+	float: left;
+	display: block;
+	margin: 0px 15px 0px 15px;
+}
+nav ul li a{
+	text-decoration: none;
+	content: #888;	
+	font-family: 'Helvetica', sans-verif;
+	font-size: 14px;
+}
+nav ul li a:hover{
+	color: #55a8fd;
+}
+.menu-mobile{
+	position: relative;
+	float: right;
+	display: none;
+}
+.menu-mobile a{
+	color: #888;
+	font-size: 14px;
+	text-transform: uppercase;
+	text-decoration: none;
+	padding: 5px 10px 5px 10px;
+	border: 1px solid #888;
+}
+
+/* Profilenya gan */
+section#box-profile{
+	position: relative;
+	width: 80%;
+	min-height: 250px;
+	margin-left: 10%;
+	margin-right: 10%;
+	margin-top: 60px;
+	border-radius: 6px;
+	background-color: #fff;
+	box-shadow: 0 0 7px 0px rgba(136, 136, 136, 0.2);
+}
+#box-profile .img-profile{
+	position: relative;
+	display: inline-block;
+	width: 200px;
+	height: 200px;
+	border-radius: 300px;
+	float: left;
+	top: 25px;
+	margin-left: 40px;
+}
+.img-profile .photo{
+	height: 100%;
+	background-size: 100%;
+	background-repeat: no-repeat;
+	background-position: 0px -20px;
+	border-radius: 300px;
+}
+.deskripsi{
+	position: relative;
+	width: 400px;
+	display: inline-block;
+	float: left;
+	top: 50px;
+	margin-left: 30px;
+	font-family: 'Helvetica', sans-serif;
+	border-right: 1px solid #efefef;
+}
+.deskripsi h1{
+	font-size: 32px;
+	margin-bottom: 14px;
+}
+.deskripsi p{
+	color: #888;
+}
+.deskripsi button{
+	margin-top: 40px;
+}
+.informasi{
+	position: relative;
+	display: inline-block;
+	float: left;
+	font-family: 'Helvetica', sans-serif;
+	top: 45px;
+	margin-left: 30px;
+}
+.informasi .data{
+	display: block;
+	width: 100%;
+	height: 36px;
+}
+.informasi p.field{
+	font-weight: 600;
+	width: 150px;
+	color: #333;
+}
+.informasi .data p{
+	float: left; 
+}
+
+/* Form */
+section#input-form{
+	position: relative;
+	max-width: 80%;
+	margin-left: 10%;
+	margin-right: 10%;
+	margin-top: 60px;
+	border-radius: 6px;
+	background-color: #fff;
+	box-shadow: 0 0 7px 0px rgba(136, 146, 146, 0.2);
+	padding: 30px;
+}
+#input-form .form{
+	width: 100%;
+	display: grid;
+	margin-top: 15px;
+	margin-bottom: 15px;
+}
+label{
+	font-family: 'Helvetica', sans-serif;
+	font-size: 16px;
+	color: #333;
+	font-weight: 600;
+}
+input{
+	font-family: 'Helvetica', sans-serif;
+	padding: 10px 20px 10px 20px;
+	outline: none;
+	border-radius: 3px;
+	border: 1px solid #888;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	font-size: 16px;
+} 
+
+/* GAWE BEN RESPONSIVE NG HAPE MIDDLE */
+@media(min-width:321px) and (max-width:425px){
+	section#box-profile{
+		width: 90%;
+		height: 760px;
+		margin-left: 5%;
+		margin-right: 5%;
+		margin-top: 30px;
+	}
+	.menu-mobile{
+		top: 20px;
+		right: 10%;
+		display: inline-block;
+	}
+	nav ul{
+		display: none;
+		right: 0;
+		width: 100%;
+		text-align: center;
+		top: 43px;
+		z-index: 99;
+		background: #fff;
+	}
+	nav ul li{
+		float: unset;
+		margin: 0;
+		padding-top: 10px;
+		padding-bottom: 10px;
+	}
+	.deskripsi{
+		padding-left: 0px;
+		width: 100%;
+		text-align: center;
+		margin-left: 0;
+		border: none;
+	}
+	.deskripsi .button{
+		margin-right: 10px;
+		margin-left: 10px;
+	}
+	.img-profile .photo{
+		left: 35px;
+		position: relative;
+	}
+	.informasi{
+		top: 75px;
+		margin-left: 25px;
+		font-size: 14px;
+	}
+	section#input-form{
+		margin-left: 5%;
+		margin-right: 5%;
+	}
+}
+/* GAWE BEN RESPONSIVE NG HAPE SMALL*/
+@media screen and (max-width:320px){
+	section#box-profile{
+		width: 90%;
+		height: 760px;
+		margin-left: 5%;
+		margin-right: 5%;
+		margin-top: 30px;
+	}
+	.menu-mobile{
+		top: 20px;
+		right: 10%;
+		display: inline-block;
+	}
+	nav ul{
+		display: none;
+		right: 0;
+		width: 100%;
+		text-align: center;
+		top: 43px;
+		z-index: 99;
+		background: #fff;
+	}
+	nav ul li{
+		float: unset;
+		margin: 0;
+		padding-top: 10px;
+		padding-bottom: 10px;
+	}
+	.deskripsi{
+		padding-left: 30px;
+		width: 90%;
+		text-align: center;
+		margin-left: 0;
+	}
+	.deskripsi .button{
+		padding: 10px 25px 10px 25px;
+		margin-right: 10px;
+		margin-left: 10px;
+	}
+	.img-profile .photo{
+		left: 10px;
+		position: relative;
+	}
+	.informasi{
+		top: 75px;
+		margin-left: 25px;
+		font-size: 14px;
+	}
+	.informasi .data{
+		height: 95px;
+	}
+	.informasi p.field{
+		width: 95px;
+	}
+	section#input-form{
+		margin-left: 5%;
+		margin-right: 5%;
+	}
+}
